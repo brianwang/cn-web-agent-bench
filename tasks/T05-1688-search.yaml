@@ -1,0 +1,15 @@
+id: T05
+name: 搜索商品并取前 5 个报价
+platform: 1688
+url: https://s.1688.com/selloffer/offer_search.htm
+requires_login: false
+difficulty: medium
+input:
+  keyword: 狗尿垫
+steps:
+  - 打开搜索页
+  - 输入关键词搜索
+  - 读取前 5 个商品标题与价格
+success_criteria:
+  - 返回至少 5 条带价格的商品
+expected_blockers: [login, js-render]

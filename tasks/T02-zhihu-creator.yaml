@@ -1,0 +1,14 @@
+id: T02
+name: 读取自己账号的创作数据
+platform: 知乎
+url: https://www.zhihu.com/creator
+requires_login: true
+difficulty: medium
+input: {}
+steps:
+  - 打开创作中心
+  - 读取创作分、关注者数、草稿数
+success_criteria:
+  - 读到创作分数字
+  - 读到草稿数
+expected_blockers: [login, js-render]

@@ -1,0 +1,19 @@
+id: T01
+name: 查询指定日期的火车余票
+platform: 12306
+url: https://www.12306.cn/
+requires_login: false
+difficulty: medium
+input:
+  from: 北京
+  to: 上海
+  date: "2026-11-25"
+steps:
+  - 打开 12306 首页
+  - 在查询框输入出发地、目的地、日期
+  - 点击查询
+  - 读取结果列表
+success_criteria:
+  - 页面出现车次列表（至少 5 个车次）
+  - 能读到至少 1 个车次的余票数量
+expected_blockers: [slider, captcha, js-render]

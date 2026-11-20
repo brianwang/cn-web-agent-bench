@@ -1,0 +1,13 @@
+id: T04
+name: 读取商家后台订单列表
+platform: 拼多多商家版
+url: https://mms.pinduoduo.com/orders/list
+requires_login: true
+difficulty: hard
+input: {}
+steps:
+  - 打开订单列表页
+  - 读取各状态订单数与总数
+success_criteria:
+  - 读到订单总数
+expected_blockers: [login, slider, session-expire]

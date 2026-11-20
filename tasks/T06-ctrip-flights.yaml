@@ -1,0 +1,17 @@
+id: T06
+name: 查询指定航线某日机票最低价
+platform: 携程
+url: https://flights.ctrip.com/
+requires_login: false
+difficulty: medium
+input:
+  from: CGO
+  to: BHY
+  date: "2026-11-25"
+steps:
+  - 打开机票搜索页
+  - 输入出发地、目的地、日期
+  - 读取结果中的最低价
+success_criteria:
+  - 读到具体价格数字
+expected_blockers: [spa-render, dynamic-price]

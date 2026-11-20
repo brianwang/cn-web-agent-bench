@@ -1,0 +1,14 @@
+id: T10
+name: 读取指定公开笔记的点赞收藏数
+platform: 小红书
+url: https://www.xiaohongshu.com/explore
+requires_login: false
+difficulty: hard
+input: {}
+steps:
+  - 打开小红书探索页
+  - 打开第一条公开笔记
+  - 读取点赞数、收藏数
+success_criteria:
+  - 读到点赞或收藏数字
+expected_blockers: [login, anti-bot, slider]

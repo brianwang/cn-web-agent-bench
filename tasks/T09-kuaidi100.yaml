@@ -1,0 +1,15 @@
+id: T09
+name: 查询快递单号物流轨迹
+platform: 快递100
+url: https://www.kuaidi100.com/
+requires_login: false
+difficulty: easy
+input:
+  tracking_no: "SF1234567890"
+steps:
+  - 打开快递查询页
+  - 输入单号
+  - 读取物流节点
+success_criteria:
+  - 返回至少 1 条物流节点
+expected_blockers: [captcha]

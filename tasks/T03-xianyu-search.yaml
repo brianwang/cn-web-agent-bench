@@ -1,0 +1,15 @@
+id: T03
+name: 搜索关键词并取前 5 个结果价格
+platform: 闲鱼
+url: https://www.goofish.com/
+requires_login: false
+difficulty: hard
+input:
+  keyword: iPhone 15
+steps:
+  - 打开闲鱼
+  - 搜索关键词
+  - 读取前 5 个结果的标题和价格
+success_criteria:
+  - 返回至少 5 条带价格的商品
+expected_blockers: [anti-bot, login, js-render]

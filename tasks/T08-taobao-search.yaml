@@ -1,0 +1,15 @@
+id: T08
+name: 搜索商品并读取销量
+platform: 淘宝
+url: https://www.taobao.com/
+requires_login: false
+difficulty: medium
+input:
+  keyword: 宠物尿垫
+steps:
+  - 打开淘宝
+  - 搜索关键词
+  - 读取前 5 个商品的销量
+success_criteria:
+  - 返回至少 3 条带销量的商品
+expected_blockers: [login, slider]

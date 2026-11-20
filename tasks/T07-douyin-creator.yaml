@@ -1,0 +1,13 @@
+id: T07
+name: 读取创作者中心粉丝与播放数据
+platform: 抖音创作者中心
+url: https://creator.douyin.com/
+requires_login: true
+difficulty: hard
+input: {}
+steps:
+  - 打开创作者中心
+  - 读取粉丝数、近期作品播放量
+success_criteria:
+  - 读到粉丝数或播放量数字
+expected_blockers: [login, anti-bot]
